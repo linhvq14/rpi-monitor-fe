@@ -1,0 +1,49 @@
+.navLink {
+    color: var(--mantine-color-gray-scale-5);
+    border-radius: var(--mantine-radius-sm);
+    padding-right: 0;
+    margin-bottom: 8px;
+  
+    & [data-position='left'] {
+      fill: var(--mantine-color-gray-scale-5);
+    }
+  
+    & [data-position='right'] {
+      fill: var(--mantine-color-gray-scale-5);
+    }
+  
+    &[data-expanded='true'] {
+      color: var(--mantine-color-gray-scale-10);
+    }
+  
+    &[data-active='true'] {
+      background-color: white;
+      color: var(--mantine-color-gray-scale-10);
+    }
+  
+    &[data-expanded='true'] [data-position='left'] {
+      fill: var(--mantine-color-gray-scale-10);
+    }
+  
+    &[data-expanded='true'] [data-position='right'] {
+      fill: var(--mantine-color-gray-scale-10);
+    }
+  
+    &[data-expanded='true'] [data-rotate='true'] {
+      transform: rotate(180deg);
+    }
+  
+    @mixin hover {
+      background-color: var(--mantine-color-background-2);
+    }
+  }
+  
+  .navLinkChild {
+    padding-left: 0;
+  
+    & a {
+      padding-left: var(--offset-left);
+      margin-bottom: 0;
+    }
+  }
+  

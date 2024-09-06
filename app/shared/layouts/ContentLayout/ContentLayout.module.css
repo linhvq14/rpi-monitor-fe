@@ -1,0 +1,23 @@
+.root {
+  padding-top: rem(24px);
+  padding-bottom: rem(24px);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.backLink {
+  display: flex;
+  align-items: center;
+  margin-bottom: rem(6px);
+  border-radius: var(--mantine-radius-sm);
+  padding-right: var(--mantine-spacing-xs);
+  width: fit-content;
+
+  @mixin hover {
+    background-color: #fff;
+  }
+}

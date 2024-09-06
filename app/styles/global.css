@@ -1,0 +1,45 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--mantine-color-background-1);
+  font-weight: 500;
+}
+
+.test .mantine-Select-root:last-of-type .mantine-Select-input {
+  border-right: 1px solid red !important;
+}
+
+/* DateInput */
+.mantine-DateInput-day {
+  color: var(--mantine-color-gray-scale-10);
+}
+
+/* Select */
+.mantine-Select-root {
+  .mantine-Select-section {
+    &:after {
+      position: absolute;
+      top: calc(50% - 2px);
+      left: calc(50% - 5px);
+      z-index: -1;
+      width: 0;
+      height: 0;
+      border-left: rem(5px) solid transparent;
+      border-right: rem(5px) solid transparent;
+      border-top: rem(5px) solid var(--mantine-color-gray-scale-5);
+      content: '';
+    }
+  }
+
+  svg.mantine-ComboboxChevron-chevron {
+    display: none;
+  }
+
+  button.mantine-CloseButton-root {
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+  }
+}

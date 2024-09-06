@@ -1,0 +1,23 @@
+.input {
+  border: 1px solid var(--mantine-color-gray-scale-3);
+  color: var(--mantine-color-gray-scale-10);
+  padding-inline-start: calc(var(--input-padding-inline-start) + rem(8px));
+  font-size: rem(15px);
+  line-height: rem(24px);
+  height: var(--search-input-height);
+
+  &::placeholder {
+    color: var(--mantine-color-gray-scale-5);
+    font-weight: 400;
+    font-size: rem(15px);
+    line-height: rem(24px);
+  }
+}
+
+.selectInput {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  max-width: rem(132px);
+  border-right: 0px;
+  height: var(--search-input-height);
+}
